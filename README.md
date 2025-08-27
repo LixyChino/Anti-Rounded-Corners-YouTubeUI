@@ -5,11 +5,8 @@
 <ul>
   <li>ブラウザ:Firefox Nightly 133.0a1(バージョン1.28以前はFirefox Beta 124.0b5)</li>
   <li>拡張機能(カスタムCSSを読みこむのに必要)：Stylus</li>
+	<li>Tampermonkey</li>
   <li>スマホ：Galaxy S22</li>
-</ul>
-<p>その他使用している(というか必要な)拡張機能</p>
-<ul>
-  <li>Tampermonkey(低評価数を表示するために使用。)</li>
 </ul>
 <p>以前使用していた拡張機能</p>
 <ul>
@@ -76,6 +73,7 @@
 		<p><s>現時点ではAnti_Rounded_Corners_YouTubeUIに自動アップデート機能はありません。</s><br>
 		<s>恐れ入りますが、最新バージョンへの更新は以下の手順に沿ってご利用者様が手動で行ってください。</s></p>
   		<p>バージョン1.32から試験的にUserStyles.worldを用いた自動アップデートを導入しました。</p>
+		<p>なお、対応しているのはメインのカスタムCSSファイルのみです。Tampermonkeyのスクリプトはこの方法ではアップデートできません。</p>
     		<p><a href="https://userstyles.world/style/21139/anti-rounded-corners-youtubeui">こちら</a>からAnti_Rounded_Corners_YouTubeUIをインストールすると、自動アップデート機能が利用できます。</p>
       		<ol>
 			<li>リンク先に飛ぶとこのようなページが表示されます。</li>
@@ -105,6 +103,8 @@
         <li>最後に「保存」をタップして完了です！！</li>
 		<img src=bin/css_apply_4.jpg width=500px>
       </ol>
+	  <h3>Tampermonkeyのスクリプト</h3>
+   	  <p>各ReleasesのAssetsの中にある.jsファイルをタップすると、自動的にTampermonkeyが開きます。<br>更新するか聞かれるので「更新」を押してください。<br>これでスクリプトの更新は完了です。</p>
   <h2>Anti_Rounded_Corners_YouTubeUIの注意点</h2>
   <ul>
     <li>通知バーはモバイルブラウザ版YouTubeの仕様上見ることが出来ません。</li>
@@ -113,7 +113,7 @@
    <li>素人が自分用に作ったものなのでバグ多めです。たまに修正しますが、完全に直せるわけではないのでご了承ください。</li>
     <li>まともな仕上がりになっているのはv1.5以降です。それ以前は実質ベータ版だとお考え下さい(v0.xとかじゃないけど)。</li>
     <li>現時点ではダークモード以外には対応していません。ライトモードを使用している方ごめんなさい。</li>
-    <li>仕様上、2本以上の広告が流れる際の「1/2」などの表示には対応していません。ご了承ください。</li>
+    <li><s>仕様上、2本以上の広告が流れる際の「1/2」などの表示には対応していません。ご了承ください。</s><br>YouTube側の仕様変更により表示されるようになりました。</li>
     <li>このカスタムCSSは日本語版向けに制作されています。他の言語には対応していません。ごめんなさい。This CSS file is only available in Japanese.</li>
     <li>低評価の表示にはAnarios & JRWR様が制作した「Return YouTube Dislike」(Tampermonkey版)を使用しています。</li>
     <li>もしかしたら環境によっては動かないかもしれません。ゆるして</li>
