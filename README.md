@@ -1,11 +1,10 @@
-<h1>Anti_Rounded_Corners_YouTubeUI</h1>
-<p>このCSSファイルは、2022年10月ごろから導入されてしまったYouTubeの角丸UIを以前のカクカクUIに戻すCSSファイルです。</p>
-<p>このCSSファイルは、<a href=https://m.youtube.com>モバイルブラウザ版YouTube(m.youtube.com)</a>を対象に作成されています。<a href=https://www.youtube.com>PCブラウザ版YouTube(www.youtube.com)</a>では使えないのでご注意ください。</p>
-<p>開発/動作検証環境(故に動作確認済み環境)は以下の通りです。</p>
+<h1>💭Anti_Rounded_Corners_YouTubeUIとは？</h1>
+<p>このカスタムCSSファイルは、2022年10月ごろから導入されてしまったYouTubeの角丸UIを以前のカクカクUI(YouTubeアプリのAPKのバージョンで言うと16.10辺り)に戻すカスタムCSSファイルです。</p>
+<p>このカスタムCSSファイルは、<a href=https://m.youtube.com>モバイルブラウザ版YouTube(m.youtube.com)</a>を対象に作成されています。<a href=https://www.youtube.com>PCブラウザ版YouTube(www.youtube.com)</a>や、アプリ版YouTubeでは使えないのでご注意ください。</p>
+<p>🛠開発/動作検証環境(故に動作確認済み環境)は以下の通りです。</p>
 <ul>
   <li>ブラウザ:Firefox Nightly 133.0a1(バージョン1.28以前はFirefox Beta 124.0b5)</li>
-  <li>拡張機能(カスタムCSSを読みこむのに必要)：Stylus</li>
-	<li>Tampermonkey</li>
+  <li>拡張機能：Stylus(カスタムCSSを読みこむのに必要)、Tampermonkey(JavaScriptで作られたスクリプトを動作させるのに必要)</li>
   <li>スマホ：Galaxy S22</li>
 </ul>
 <p>以前使用していた拡張機能</p>
@@ -13,40 +12,46 @@
   <li>Stylebot(バージョン1.4まで使用されていました。カスタムCSSを動かす為の拡張機能です。現在はStylusに置き換えられています。)</li>
   <li>uBlock Origin(バージョン1.19まで使用していました。要素のブロック用です。現在は要素ブロックをカスタムCSSに混ぜ混んだ(display:none;を使用)為廃止されました。)</li>
 </ul>
-<h2>機能紹介</h2>
-  <h3>YouTubeの角丸UIを抹消！！</h3>
+<h2>✨機能紹介</h2>
+  <h3>🔳YouTubeの角丸UIを抹消！！</h3>
     <p>このCSSを適用すると、モダンな角丸UIを以前のカクカクしたUIに戻すことが出来ます！！</p>
     <small><small><p>※バージョン16.10のYouTubeアプリ辺りをイメージして作成しています。</p></small></small>
     <img src=bin/ytui_back_demo1.png alt="適用前後比較" width=500px>
-  <h3>高評価ボタンや低評価ボタンを以前のスタイルに近い状態に！！</h3>
+  <h3>👍高評価ボタンや低評価ボタンを以前のスタイルに近い状態に！！</h3>
     <p>高評価ボタンや低評価ボタンが以前の大きくて押しやすいボタンになります！！</p>
     <small><small><p>※v1.5から実装しています。</p></small></small>
     <img src=bin/ytui_back_demo4.png alt="ボタン" width=500px>
-  <h3>チャンネル登録者数の表記が現行の簡略化されすぎた表記から以前のある程度の簡略化まで変更</h3>
+  <h3>📺チャンネル登録者数の表記が現行の簡略化されすぎた表記から以前のある程度の簡略化まで変更</h3>
     <p>現行の表記は数字(チャンネルによっては万などの表記もある)のみですが、このCSSを適用すると以前の「チャンネル登録者数○○人」という表記が復活します！！</p>
     <img src=bin/ytui_back_demo2.png alt="登録者数" width=500px>
     <small><small><p>※登録者数が1万人以上のチャンネルにおいて、登録者数自体が1人単位で見えるようになるものではありません。</p></small></small>
     <small><small><p>※v1.3から実装しています。</p></small></small>
-  <h3>概要欄に素早くアクセス！！</h3>
+  <h3>⚡概要欄に素早くアクセス！！</h3>
     <p>タイトルをタップした後さらにもう1回タップしなきゃいけないのは意味不明！！ということでタイトルをタップしたらその時点で概要欄がすべて見えるように改良しました！！</p>
     <img src=bin/ytui_back_demo3.png alt="概要欄" width=500px>
     <small><small><p>※v1.5から実装しています。</p></small></small>
-<h2>導入方法</h2>
-  <p>0.あらかじめFirefox BetaにStylusとTampermonkeyをインストールします。<br>また、YouTubeアプリの「対応するリンクを開く」設定を無効化してください。</p>
+<h2>📲導入方法</h2>
+  <p>0.あらかじめFirefox BetaまたはFirefox Nightlyに<a href="https://addons.mozilla.org/ja/firefox/addon/styl-us/">Stylus</a>と<a href="https://addons.mozilla.org/ja/firefox/addon/tampermonkey/">Tampermonkey</a>をインストールします。<br>また、YouTubeアプリの「対応するリンクを開く」設定を無効化してください。</p>
   <ol>
-    <li>「Releases」から最新のファイルをダウンロードする。</li>
-    <li>ファイルエディターからでもなんでもいいのでダウンロードしたzipファイルを解凍する。</li>
-    <li>解凍したら「anti_rounded_corners_YouTubeUI_v1.x」というtxtファイルができます。</li>
-    <li>「anti_rounded_corners_YouTubeUI_v1.x」というtxtファイルの中にcssが入っているので、内容をすべて選択し、クリップボードにコピーする。</li>
-    <li>Firefox Betaを開いて、右上の点３つ→「アドオン」→「Stylus」→「管理」→「スタイルを新規作成」の順にタップする。(この段階でデスクトップサイトを有効化しておいてください。そうしないと「スタイルに追加」が上手く押せないんですよね)</li>
-    <li>「インポート」をタップして、「Mozilla形式のコードを貼り付ける」というものが出たら、そこに先ほどコピーしたcssをペーストする。</li>
-    <li>「スタイルに追加」をタップして、左上の「保存」をタップする。</li>
+	<li><a href="https://userstyles.world/style/21139/anti-rounded-corners-youtubeui">こちら</a>からUserStyles.worldのAryYTUIのページに飛ぶ。</li>
+			<li>リンク先に飛ぶとこのようなページが表示されます。</li>
+      				<img src="bin/ytui_update1.png" alt="更新" width=500px>
+    			<li>右下の「Install」をクリックします。</li>
+				<img src="bin/ytui_update2.png" alt="更新" width=500px>
+			<li>クリックするとこのようにStylusが起動します。</li>
+				<img src="bin/ytui_update3.png" alt="更新" width=500px>
+    			<li>左上の「インストール」をクリックします。</li>
+				<img src="bin/ytui_update4.png" alt="更新" width=500px>
+			<p>「スタイルがインストー­ルされています」と表示されれば完了です。お疲れさまでした。</p>
+  				<img src="bin/ytui_update5.png" alt="更新" width=500px>
+    <li>「<a href="https://github.com/LixyChino/Anti-Rounded-Corners-YouTubeUI/releases">Releases</a>」から最新のリリースを確認する。</li>
+	<li>最新のリリースの「Assets」の中にある「ArcYTUI_○-0.x.user.js」をすべてTampermonkeyにインストールする。</li>
     <li><a href=https://greasyfork.org/en/scripts/436115-return-youtube-dislike/code>こちらのリンク</a>からReturn YouTube Dislike(Tampermonkey版)のインストール画面へ行く。</li>
     <li>「Install this sctipt」をタップする。</li>
     <li>「インストール」をタップする。</li>
   </ol>
     <p>以上で導入は終了です。お疲れさまでした。</p>
-<h2>あると便利なWebアプリ版</h2>
+<h2>🎯あると便利なWebアプリ版</h2>
 	<p>Anti_Rounded_Corners_YouTubeUIにはWebアプリ版が用意されています。<br>Webアプリ版を使用すると、より一層アプリ版を使用しているような使い心地になります。</p>
  	<p>Webアプリ版は以下の手順を踏むことでインストールすることができます。</p>
  	<ol>
@@ -69,25 +74,18 @@
 				<img src="bin/arcytui_install_6.jpg" alt="Webアプリ" height=500px>
 		</ul>
 	</ol>
-<h2>Anti_Rounded_Corners_YouTubeUIの更新について</h2>
-		<p><s>現時点ではAnti_Rounded_Corners_YouTubeUIに自動アップデート機能はありません。</s><br>
-		<s>恐れ入りますが、最新バージョンへの更新は以下の手順に沿ってご利用者様が手動で行ってください。</s></p>
-  		<p>バージョン1.32から試験的にUserStyles.worldを用いた自動アップデートを導入しました。</p>
+<h2>🔄Anti_Rounded_Corners_YouTubeUIの自動更新について</h2>
+  		<p>バージョン1.32からUserStyles.worldを用いた自動アップデートが利用可能となりました。</p>
 		<p>なお、対応しているのはメインのカスタムCSSファイルのみです。Tampermonkeyのスクリプトはこの方法ではアップデートできません。</p>
-    		<p><a href="https://userstyles.world/style/21139/anti-rounded-corners-youtubeui">こちら</a>からAnti_Rounded_Corners_YouTubeUIをインストールすると、自動アップデート機能が利用できます。</p>
-      		<ol>
-			<li>リンク先に飛ぶとこのようなページが表示されます。</li>
-      				<img src="bin/ytui_update1.png" alt="更新" width=500px>
-    			<li>右下の「Install」をクリックします。</li>
-				<img src="bin/ytui_update2.png" alt="更新" width=500px>
-			<li>クリックするとこのようにStylusが起動します。</li>
-				<img src="bin/ytui_update3.png" alt="更新" width=500px>
-    			<li>左上の「インストール」をクリックします。</li>
-				<img src="bin/ytui_update4.png" alt="更新" width=500px>
-			<p>「スタイルがインストー­ルされています」と表示されれば完了です。お疲れさまでした。</p>
-  				<img src="bin/ytui_update5.png" alt="更新" width=500px>
-		</ol>
-  <h2>手動での更新方法</h2>
+		<p>Release内で公開されているZIPファイルから手動でインストールした場合は、この機能はご利用いただけません。</p>
+		<p>デフォルトでは、24時間に1回更新をチェックし、更新が存在した場合は自動的に更新されるという設定になっています。</p>
+		<p>更新間隔は、Stylusの管理画面→設定アイコン→「更新設定」から変更できます。</p>
+		<p>すぐに更新の有無を確認するには、Stylusの管理画面のスタイル一覧→「Anti_Rounded_Corners_YouTubeUI」の右側にある3つのアイコンのうち、一番右側の更新アイコン(環境によっては「更新をチェック」)を押してください。</p>
+		<img src=bin/ytui_autoupdate_1.jpg width=500px>
+		<p>自動更新を無効化するには、Stylusの管理画面のスタイル一覧→「Anti_Rounded_Corners_YouTubeUI」→「スタイル設定」→「更新をチェック」のチェックを外してください。</p>
+		<img src=bin/ytui_autoupdate_2.jpg width=500px>
+  <h2>手動での更新方法(非推奨)</h2>
+  	<p>古いバージョンを利用したい場合や、その他何らかの理由などで、ZIPファイル内のCSSファイルから直接導入/更新をする場合は、以下の方法をご利用ください。</p>
       <ol>
         <li>「Releases」から最新のファイルをダウンロードする。</li>
         <li>ファイルエディターからでもなんでもいいのでダウンロードしたzipファイルを解凍する。</li>
@@ -102,10 +100,11 @@
 	      	<img src=bin/css_apply_3.jpg width=500px>
         <li>最後に「保存」をタップして完了です！！</li>
 		<img src=bin/css_apply_4.jpg width=500px>
+		<li>新規導入の場合は、「導入方法」の8番以降の手順も行ってください。</li>
       </ol>
 	  <h3>Tampermonkeyのスクリプト</h3>
    	  <p>各ReleasesのAssetsの中にある.jsファイルをタップすると、自動的にTampermonkeyが開きます。<br>更新するか聞かれるので「更新」を押してください。<br>これでスクリプトの更新は完了です。</p>
-  <h2>Anti_Rounded_Corners_YouTubeUIの注意点</h2>
+  <h2>⚠Anti_Rounded_Corners_YouTubeUIの注意点</h2>
   <ul>
     <li>通知バーはモバイルブラウザ版YouTubeの仕様上見ることが出来ません。</li>
     <li><s>全画面表示にするとブラウザを再起動するまでホームの下のタブが消えます。</s><br>Firefoxの更新で解決しました。</li>
@@ -118,7 +117,7 @@
     <li>低評価の表示にはAnarios & JRWR様が制作した「Return YouTube Dislike」(Tampermonkey版)を使用しています。</li>
     <li>もしかしたら環境によっては動かないかもしれません。ゆるして</li>
   </ul><br>
-	<h2>クレジット表記</h2>
+	<h2>©クレジット表記</h2>
     <p>このCSSの一部にはクリエイティブコモンズやその他クレジット表記が必要なコンテンツが含まれています。<br>それらの表記を追加しています。</p>
     	  <p>履歴アイコン</p>
 	  <a href="https://iconscout.com/icons/history" class="text-underline font-size-sm" target="_blank">History</a> by <a href="https://iconscout.com/contributors/icon-stockes" class="text-underline font-size-sm" target="_blank">Stockes Design</a>
