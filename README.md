@@ -1,9 +1,9 @@
 <h1>💭Anti_Rounded_Corners_YouTubeUIとは？</h1>
 <p>このカスタムCSSファイルは、2022年10月ごろから導入されてしまったYouTubeの角丸UIを以前のカクカクUI(YouTubeアプリのAPKのバージョンで言うと16.10辺り)に戻すカスタムCSSファイルです。</p>
-<p>このカスタムCSSファイルは、<a href=https://m.youtube.com>モバイルブラウザ版YouTube(m.youtube.com)</a>を対象に作成されています。<a href=https://www.youtube.com>PCブラウザ版YouTube(www.youtube.com)</a>や、アプリ版YouTubeでは使えないのでご注意ください。</p>
+<p>このカスタムCSSファイルは、<a href=https://m.youtube.com>モバイルブラウザ版YouTube(m.youtube.com)</a>を対象に作成されています。<a href=https://www.youtube.com>PCブラウザ版YouTube(www.youtube.com)</a>や、アプリ版YouTubeでは使用することができないのでご注意ください。</p>
 <p>🛠開発/動作検証環境(故に動作確認済み環境)は以下の通りです。</p>
 <ul>
-  <li>ブラウザ:Firefox Nightly 133.0a1(バージョン1.28以前はFirefox Beta 124.0b5)</li>
+  <li>ブラウザ:Firefox Nightly 140.0a1</li>
   <li>拡張機能：Stylus(カスタムCSSを読みこむのに必要)、Tampermonkey(JavaScriptで作られたスクリプトを動作させるのに必要)</li>
   <li>スマホ：Galaxy S22</li>
 </ul>
