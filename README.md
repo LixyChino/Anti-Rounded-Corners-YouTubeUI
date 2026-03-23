@@ -3,7 +3,8 @@
 <p>このカスタムCSSファイルは、<a href=https://m.youtube.com>モバイルブラウザ版YouTube(m.youtube.com)</a>を対象に作成されています。<a href=https://www.youtube.com>PCブラウザ版YouTube(www.youtube.com)</a>や、アプリ版YouTubeでは使用することができないのでご注意ください。</p>
 <p>🛠開発/動作検証環境(故に動作確認済み環境)は以下の通りです。</p>
 <ul>
-  <li>ブラウザ:Firefox Nightly 140.0a1</li>
+  <li>ブラウザ(開発):Firefox Developer Edition 149.0b10</li>
+<li>ブラウザ(デバッグ):Firefox Nightly 140.0a1</li>
   <li>拡張機能：Stylus(カスタムCSSを読みこむのに必要)、Tampermonkey(JavaScriptで作られたスクリプトを動作させるのに必要)</li>
   <li>スマホ：Galaxy S22</li>
 </ul>
