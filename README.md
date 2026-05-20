@@ -117,6 +117,7 @@
     <li>このカスタムCSSは日本語版向けに制作されています。他の言語には対応していません。ごめんなさい。This CSS file is only available in Japanese.</li>
     <li>低評価の表示にはAnarios & JRWR様が制作した「Return YouTube Dislike」(Tampermonkey版)を使用しています。</li>
     <li>もしかしたら環境によっては動かないかもしれません。ゆるして</li>
+	<li>一部のスクリプトにinnerHTMLを使用しているため、innerHTMLの実行がブロックされる環境では一部機能が動かない可能性があります。</li>
   </ul><br>
 	<h2>©クレジット表記</h2>
     <p>このCSSの一部にはクリエイティブコモンズやその他クレジット表記が必要なコンテンツが含まれています。<br>それらの表記を追加しています。</p>
