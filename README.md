@@ -32,8 +32,8 @@
     <img src=bin/ytui_back_demo3.png alt="概要欄" width=500px>
     <small><small><p>※v1.5から実装しています。</p></small></small>
 <h2>📲導入方法</h2>
-  <p>0.あらかじめFirefox BetaまたはFirefox Nightlyに<a href="https://addons.mozilla.org/ja/firefox/addon/styl-us/">Stylus</a>と<a href="https://addons.mozilla.org/ja/firefox/addon/tampermonkey/">Tampermonkey</a>をインストールします。<br>また、YouTubeアプリの「対応するリンクを開く」設定を無効化してください。</p>
-  <ol>
+  <ol start="0">
+	<li>あらかじめFirefox BetaまたはFirefox Nightlyに<a href="https://addons.mozilla.org/ja/firefox/addon/styl-us/">Stylus</a>と<a href="https://addons.mozilla.org/ja/firefox/addon/tampermonkey/">Tampermonkey</a>をインストールします。<br>また、YouTubeアプリの「対応するリンクを開く」設定を無効化してください。</li>
 	<li><a href="https://userstyles.world/style/21139/anti-rounded-corners-youtubeui">こちら</a>からUserStyles.worldのAryYTUIのページに飛ぶ。</li>
 			<li>リンク先に飛ぶとこのようなページが表示されます。</li>
       				<img src="bin/ytui_update1.png" alt="更新" width=500px>
