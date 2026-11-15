@@ -83,9 +83,13 @@
   function metadataMatchesUrl(metadata, href) {
     const patterns = normalizeList(metadata.match);
     if (!patterns.length) return false;
-    const toRegExp = pattern => new RegExp('^' + String(pattern).replace(/[.*+?^${}()|[\\]\\]/g, '\\  function isVersionAvailable(version) {
-    return version && version.enabled === true && version.selectable !== false && typeof version.url === 'string';
-  }').replace(/\\*/g, '.*') + '
+    const toRegExp = pattern => {
+      const escaped = String(pattern).split('*').map(part => part.replace(/[\\^$+?.()|{}\[\]]/g, '\\$&')).join('.*');
+      return new RegExp('^' + escaped + '$');
+    };
+    if (!patterns.some(pattern => { try { return toRegExp(pattern).test(href); } catch { return false; } })) return false;
+    return !normalizeList(metadata.exclude).some(pattern => { try { return toRegExp(pattern).test(href); } catch { return false; } });
+  }
 
   function compareVersions(a, b) {
     const aa = String(a || '').split('.').map(Number);
